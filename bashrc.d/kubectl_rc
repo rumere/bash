@@ -1,3 +1,5 @@
 # kubectl_rc
 
-source <(kubectl completion bash)
+if [ -x /usr/local/bin/kubectl ]; then
+    source <(kubectl completion bash)
+fi
