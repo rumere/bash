@@ -1,0 +1,8 @@
+###############################################################################
+# Base Path
+###############################################################################
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+MANPATH=/usr/man:/usr/local/man
+
+export USERNAME BASH_ENV PATH MANPATH EDITOR FLAVOR

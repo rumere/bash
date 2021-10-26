@@ -1,0 +1,3 @@
+# kubectl_rc
+
+source <(kubectl completion bash)

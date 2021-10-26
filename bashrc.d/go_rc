@@ -1,0 +1,9 @@
+# go_rc
+
+if [ -d /usr/local/go ]; then
+	PATH=$PATH:/usr/local/go/bin
+    GOROOT=/usr/local/go
+    GOPATH=~/src/go
+fi
+
+export PATH GOROOT GOPATH

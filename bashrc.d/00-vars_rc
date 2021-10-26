@@ -1,0 +1,8 @@
+## vars
+
+FLAVOR=`uname`
+BASH_ENV=$HOME/.bashrc
+USERNAME=""
+EDITOR=vi
+
+export FLAVOR BASH_ENV USERNAME EDITOR

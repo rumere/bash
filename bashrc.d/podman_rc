@@ -1,0 +1,6 @@
+###############################################################################
+# Podman stuffs
+###############################################################################
+
+export CONTAINER_SSHKEY=~/src/tools/podman/.vagrant/machines/default/virtualbox/private_key
+

@@ -1,0 +1,20 @@
+### aliases ###
+
+alias ll="ls -lF"
+alias la="ls -al"
+alias lad="ls -lad"
+alias li="ls -laFi"
+alias PG="/usr/ucb/ps -ef | grep"
+alias sudu="su root -c"
+
+if [ -f /usr/local/bin/vim ] || [ -f /usr/bin/vim ]; then
+	alias vi="vim"
+fi
+
+if [ -f /usr/local/bin/less ] || [ -f /usr/bin/less ]; then
+	alias more="less"
+fi
+
+if [ -f /usr/local/bin/tar ]; then
+	alias tar="/usr/local/bin/tar"
+fi

@@ -1,0 +1,27 @@
+###############################################################################
+# Prompt
+###############################################################################
+
+if [ "$PS1" ]; then
+	if [ "x`tput kbs`" != "x" ]; then # We can't do this with "dumb" terminal
+		stty erase `tput kbs`
+	fi
+
+	case $TERM in
+	xterm*)
+		PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME}\007"'
+		;;
+	*)
+		;;
+	esac
+
+	PS1="[\t \h]\\$ "
+
+	if [ "x$SHLVL" != "x1" ]; then # We're not a login shell
+		for i in /etc/profile.d/*.sh; do
+		if [ -x $i ]; then
+			. $i
+		fi
+		done
+	fi
+fi
